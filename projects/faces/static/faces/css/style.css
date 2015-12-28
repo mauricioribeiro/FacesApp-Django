@@ -1,0 +1,20 @@
+*{
+	font-family: 'Lato', sans-serif;
+    text-align: center;
+}
+html{
+	background: #FFF;
+    color: #383838;
+}
+h1,h2,b,i,a,p{
+	margin: 5px;
+}
+
+#webcam{
+	width: 320px;
+    height: 320px;
+    margin: 10px auto;
+    background: #505050;
+    border: 2px solid #fff;
+    overflow: hidden;
+}

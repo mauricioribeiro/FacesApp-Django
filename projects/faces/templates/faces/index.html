@@ -1,0 +1,16 @@
+{% include "faces/header.html" %}
+
+<h1>Faces App</h1>
+<b>Open CV version: {{ cv_tag }}</b>
+<small>Sources on: {{ dir_tag }}</small>
+
+<form id="loginUsingFacesApp" method="post" action="login">
+	<div id="webcam"></div>
+	<input type="button" onclick="FacesApp.send()" value="Login using FacesApp"/>
+
+	{% if error_msg %}<p style="color: #F16262">{{ error_msg }}</p>{% endif %}
+	{% if success_msg %}<p style="color: #2BB3E8">{{ success_msg }}</p>{% endif %}
+	{% csrf_token %}
+</form>
+
+{% include "faces/footer.html" %}

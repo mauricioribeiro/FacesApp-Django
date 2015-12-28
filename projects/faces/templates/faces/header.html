@@ -1,0 +1,16 @@
+<html>
+<head>
+	<title>Faces App {% if title_tag %} | {{ title_tag }} {% endif %}</title>
+
+	{% load staticfiles %}
+	<link rel="stylesheet" type="text/css" href="{% static 'faces/css/style.css' %}" />
+
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script type="text/javascript" src="{% static 'faces/js/getUserMedia.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'faces/js/csrf.js' %}"></script>
+	<script type="text/javascript" src="{% static 'faces/js/faces.js' %}"></script>
+
+	<link href='https://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
